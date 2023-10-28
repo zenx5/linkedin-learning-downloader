@@ -1,0 +1,28 @@
+{
+    "name": "LinkedIn Video Downloader",
+    "description": "Extension para descargar los videos de LinkedIn",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons":{
+        "128":"assets/red.svg",
+        "64":"assets/red.svg",
+        "32":"assets/red.svg"
+    },
+    "action": {
+        "default_icon": {
+            "16": "assets/red.svg",
+            "32": "assets/red.svg",
+            "48": "assets/red.svg",
+            "128": "assets/red.svg"
+        }
+    },
+    "background": {
+        "service_worker": "src/js/background.js"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "storage",
+        "scripting"
+    ]
+  }
